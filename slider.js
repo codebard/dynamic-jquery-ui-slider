@@ -27,5 +27,11 @@ jQuery(document).ready(function($) {
 		}
     });
 	
+	jQuery(document).on('input', '.cb_p2_slider_input_value', function(e) {
+ 
+		jQuery(document.getElementById(jQuery(this).attr('parent_slider'))).slider( "value", jQuery(this).val());
+	
+	});	
+	
 
 });
